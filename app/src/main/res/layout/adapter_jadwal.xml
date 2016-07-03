@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_timeline"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+
+    card_view:cardCornerRadius="3dp"
+    card_view:contentPadding="10dp"
+    card_view:cardElevation="1.5dp"
+    card_view:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/subject"
+          android:textColor="@color/grey_500"
+          android:text="Android"
+          android:textStyle="bold"
+          android:textSize="8pt"
+          android:fontFamily="roboto"
+          android:layout_margin="10dp"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textColor="@color/grey_500"
+            android:text="11/10/2016"
+            android:textSize="8pt"
+            android:fontFamily="roboto"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/subject"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama"
+            android:textColor="@color/grey_500"
+            android:text="Adams Safari"
+            android:textSize="8pt"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:fontFamily="roboto"
+            android:layout_below="@+id/date"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jam"
+            android:textColor="@color/grey_500"
+            android:text="13:56"
+            android:textSize="8pt"
+            android:fontFamily="roboto"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignTop="@+id/date" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
