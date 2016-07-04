@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_subject"
-            android:icon="@drawable/android"
+            android:icon="@drawable/ic_subject"
             android:title="Subjek" />
         <item
             android:id="@+id/nav_tutors"
@@ -12,15 +12,15 @@
             android:title="Daftar Tutor" />
         <item
             android:id="@+id/nav_schedules"
-            android:icon="@drawable/android"
+            android:icon="@drawable/ic_schedule"
             android:title="Jadwal" />
         <item
             android:id="@+id/nav_near_tutors"
-            android:icon="@drawable/android"
+            android:icon="@drawable/ic_neartutor"
             android:title="Tutor Terdekat" />
         <item
             android:id="@+id/nav_profile"
-            android:icon="@drawable/android"
+            android:icon="@drawable/ic_profile"
             android:title="Profil" />
     </group>
 

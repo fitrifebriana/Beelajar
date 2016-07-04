@@ -1,4 +1,4 @@
-package id.or.codelabs.beelajar;
+package id.or.codelabs.beelajar.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import id.or.codelabs.beelajar.R;
 
 public class SignIn extends AppCompatActivity {
 
@@ -37,9 +39,13 @@ public class SignIn extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = txtEmail.getText().toString().trim();
+                //String email = txtEmail.getText().toString().trim();
 
                 Intent intent = new Intent(SignIn.this,MainActivity.class);
+                /*
+                intent.putExtra(MainActivity.KEY_DATA, email);
+                startActivityForResult(intent, 0);
+                */
                 startActivity(intent);
             }
         });

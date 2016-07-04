@@ -1,4 +1,4 @@
-package id.or.codelabs.beelajar;
+package id.or.codelabs.beelajar.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -11,15 +11,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import id.or.codelabs.beelajar.R;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
 
+    /*
+    private TextView txtUsersEmail;
+    public static String receivedData = null;
+    public static String KEY_DATA = "data";
+    */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Subjek");
@@ -30,13 +39,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+        /*
+        txtUsersEmail = (TextView)findViewById(R.id.txt_email);
+        receivedData = getIntent().getStringExtra(KEY_DATA);
+        txtUsersEmail.setText(receivedData);
+        */
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
         mFragmentTransaction.replace(R.id.container,new SubjectFragment()).commit();
-
     }
 
     @Override
