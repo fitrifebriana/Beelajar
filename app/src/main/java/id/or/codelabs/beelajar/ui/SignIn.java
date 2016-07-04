@@ -26,6 +26,14 @@ public class SignIn extends AppCompatActivity {
         declareWidget();
 
         buttonClickedActionPerformed();
+        Button forgot = (Button)findViewById(R.id.btn_forget_password);
+        forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent forgot = new Intent(SignIn.this,ForgotPassword.class);
+                startActivity(forgot);
+            }
+        });
     }
 
     private void buttonClickedActionPerformed() {
