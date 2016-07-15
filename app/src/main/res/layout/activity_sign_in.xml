@@ -10,7 +10,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/colorPrimary"
-    tools:context=".ui.SignIn">
+    tools:context=".SignIn">
 
     <ImageView
         android:layout_width="192dp"
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:inputType="textEmailAddress"
+        android:inputType="textEmailAddress|textNoSuggestions"
         android:fontFamily="serif"
         android:textColorHint="@color/white"
         android:hint="Email"
@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:inputType="textPassword"
+        android:inputType="textPassword|textNoSuggestions"
         android:fontFamily="serif"
         android:textColorHint="@color/white"
         android:hint="Password"

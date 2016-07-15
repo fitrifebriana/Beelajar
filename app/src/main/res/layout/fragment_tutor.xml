@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="8dp"
-    tools:context=".ui.TutorFragment">
+    tools:context=".TutorFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rec_tutor"
