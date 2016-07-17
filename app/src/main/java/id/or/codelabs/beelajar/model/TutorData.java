@@ -22,7 +22,7 @@ public class TutorData {
     public static List<ListTutor> getListTutors(){
         List<ListTutor> listTutors = new ArrayList<>();
 
-        for (int x = 0; x < 3; x++) {
+        for (int x = 0; x < 4; x++) {
             for (int i = 0; i < tutorNames.length; i++) {
                 ListTutor tutor = new ListTutor();
                 tutor.setImgTutorResId(tutorImages[i]);

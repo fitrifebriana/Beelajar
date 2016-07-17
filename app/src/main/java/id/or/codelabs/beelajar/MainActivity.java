@@ -1,5 +1,6 @@
 package id.or.codelabs.beelajar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -102,6 +103,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mFragmentManager = getSupportFragmentManager();
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.container,new ProfileFragment()).commit();
+        }else if(id == R.id.nav_logout){
+            Intent logout = new Intent(MainActivity.this,SignIn.class);
+            startActivity(logout);
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

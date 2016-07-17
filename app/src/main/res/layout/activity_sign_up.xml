@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:textAppearanceLarge"
         android:textStyle="bold"
+        android:fontFamily="roboto"
         android:textColor="@color/white"
         android:text="Daftar"/>
 
@@ -27,7 +28,7 @@
         android:layout_marginTop="16dp"
         android:inputType="textEmailAddress"
         android:textColorHint="@color/white"
-        android:fontFamily="serif"
+        android:fontFamily="roboto"
         android:backgroundTint="@color/white"
         android:hint="Email"/>
 
@@ -36,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:fontFamily="serif"
+        android:fontFamily="roboto"
         android:inputType="text"
         android:textColorHint="@color/white"
         android:backgroundTint="@color/white"
@@ -47,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:fontFamily="serif"
+        android:fontFamily="roboto"
         android:inputType="textPassword"
         android:textColorHint="@color/white"
         android:backgroundTint="@color/white"
@@ -59,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:inputType="textPassword"
-        android:fontFamily="serif"
+        android:fontFamily="roboto"
         android:textColorHint="@color/white"
         android:backgroundTint="@color/white"
         android:hint="Ulangi password"/>
@@ -70,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textAppearance="?android:textAppearanceMedium"
-        android:fontFamily="serif"
+        android:fontFamily="roboto"
         android:textColorHint="@color/white"
         android:paddingRight="40dp"
         android:paddingLeft="40dp"

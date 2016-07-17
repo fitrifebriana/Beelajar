@@ -10,7 +10,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/colorPrimary"
-    tools:context=".SignIn">
+    tools:context="id.or.codelabs.beelajar.SignIn">
 
     <ImageView
         android:layout_width="192dp"
@@ -24,15 +24,17 @@
         android:layout_marginTop="16dp"
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@color/white"
+        android:fontFamily="roboto"
         android:text="Masuk untuk menemukan guru les pilihanmu"/>
 
     <EditText
+
         android:id="@+id/txt_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:inputType="textEmailAddress|textNoSuggestions"
-        android:fontFamily="serif"
+        android:fontFamily="roboto"
         android:textColorHint="@color/white"
         android:hint="Email"
         android:backgroundTint="#ffffff" />
@@ -43,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:inputType="textPassword|textNoSuggestions"
-        android:fontFamily="serif"
+        android:fontFamily="roboto"
         android:textColorHint="@color/white"
         android:hint="Password"
         android:backgroundTint="#ffffff" />
@@ -53,6 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
+        android:fontFamily="roboto"
         android:background="?selectableItemBackgroundBorderless"
         android:textColorHint="@color/white"
         android:hint="Lupa password?"/>
@@ -64,7 +67,7 @@
         android:layout_marginTop="8dp"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:fontFamily="serif"
+        android:fontFamily="roboto"
         android:background="@color/grey_800"
         android:textAppearance="?android:textAppearanceMedium"
         android:textColorHint="@color/white"
@@ -82,6 +85,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/white"
+            android:fontFamily="roboto"
             android:text="Belum memiliki akun?"/>
 
         <Button
@@ -91,6 +95,7 @@
             android:background="?selectableItemBackgroundBorderless"
             android:textStyle="bold"
             android:textColorHint="@color/white"
+            android:fontFamily="roboto"
             android:textAppearance="?android:textAppearanceMedium"
             android:hint="Daftar"/>
     </LinearLayout>
