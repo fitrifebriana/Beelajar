@@ -8,16 +8,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SignIn">
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignIn">
+            <intent-filter>
+                <action android:name="id.or.codelabs.beelajar.SignIn" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".SignUp" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ForgotPassword" />
+
     </application>
 
 </manifest>

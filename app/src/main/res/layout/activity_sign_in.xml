@@ -10,7 +10,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/colorPrimary"
-    tools:context="id.or.codelabs.beelajar.SignIn">
+    tools:context=".SignIn">
 
     <ImageView
         android:layout_width="192dp"
